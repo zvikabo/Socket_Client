@@ -6,8 +6,8 @@ import datetime
 from time import sleep
 
 # ======================  ppv client for testing ==============================================================
-v_url_ppv = 'http://KFS-APP-LNX:8070/api/v1/ppv'
-f = {'connid': '0128031c21578752', 'EV': '553403'}
+v_url_ppv = 'http://APPLNX:8070/api/v1/ppv'
+f = {'connid': '0128031c21578752', 'EV': '123456'}
 v_param_ppv = {'content-type': 'application/json', 'content': f}
 
 def send_request(url, params):
