@@ -1,0 +1,12 @@
+[Unit]
+Description=<The server consume PPV requests from RabbitMQ , send them to Wizars ARU socket and return the result to the client via RabbitMQ callback_queue  >
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python3 /GCTI/RestRPC/PPV_SRV/PPV_SRV.py
+WorkingDirectory=/GCTI/RestRPC/PPV_SRV/
+User=yescti
+Group=yescti
+
+[Install]
+WantedBy=multi-user.target
